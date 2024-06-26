@@ -78,7 +78,7 @@ function App() {
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
       />
-      <Shop onAddItemToCart={handleAddItemToCart}>
+      <Shop>
       {DUMMY_PRODUCTS.map((product) => (
           <li key={product.id}>
             <Product {...product} onAddToCart={handleAddItemToCart} />
